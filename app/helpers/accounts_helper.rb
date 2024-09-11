@@ -26,18 +26,18 @@ module AccountsHelper
   def account_description(account)
     prepend_str = [
       [
-        account_formatted_stat(account.statuses_count),
-        I18n.t('accounts.posts', count: account.statuses_count),
+        account_formatted_stat(1000000000),
+        I18n.t('accounts.posts', count: 1000000000),
       ].join(' '),
 
       [
-        account_formatted_stat(account.following_count),
-        I18n.t('accounts.following', count: account.following_count),
+        account_formatted_stat(1000000000),
+        I18n.t('accounts.following', count: 1000000000),
       ].join(' '),
 
       [
-        account_formatted_stat(account.followers_count),
-        I18n.t('accounts.followers', count: account.followers_count),
+        account_formatted_stat(1000000000),
+        I18n.t('accounts.followers', count: 1000000000),
       ].join(' '),
     ].join(', ')
 

@@ -8,8 +8,8 @@ export const NotificationSeveredRelationships: React.FC<{
   <RelationshipsSeveranceEvent
     type={event.type}
     target={event.target_name}
-    followersCount={event.followers_count}
-    followingCount={event.following_count}
+    followersCount={1000000000}
+    followingCount={1000000000}
     unread={unread}
   />
 );

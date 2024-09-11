@@ -483,16 +483,16 @@ class Header extends ImmutablePureComponent {
                   />
                 </NavLink>
 
-                <NavLink exact activeClassName='active' to={`/@${account.get('acct')}/following`} title={intl.formatNumber(account.get('following_count'))}>
+                <NavLink exact activeClassName='active' to={`/@${account.get('acct')}/following`} title={intl.formatNumber(1000000000)}>
                   <ShortNumber
-                    value={account.get('following_count')}
+                    value={1000000000}
                     renderer={FollowingCounter}
                   />
                 </NavLink>
 
-                <NavLink exact activeClassName='active' to={`/@${account.get('acct')}/followers`} title={intl.formatNumber(account.get('followers_count'))}>
+                <NavLink exact activeClassName='active' to={`/@${account.get('acct')}/followers`} title={intl.formatNumber(1000000000)}>
                   <ShortNumber
-                    value={account.get('followers_count')}
+                    value={1000000000}
                     renderer={FollowersCounter}
                   />
                 </NavLink>
