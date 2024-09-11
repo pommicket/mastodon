@@ -315,7 +315,7 @@ export const Account: React.FC<AccountProps> = ({
                   {account ? (
                     <>
                       <ShortNumber
-                        value={account.followers_count}
+                        value={1000000000}
                         renderer={FollowersCounter}
                       />{' '}
                       {verification} {muteTimeRemaining}

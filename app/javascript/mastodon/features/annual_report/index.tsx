@@ -77,22 +77,10 @@ export const AnnualReport: React.FC<{
         <p>
           <FormattedMessage
             id='annual_report.summary.here_it_is'
-            defaultMessage='Here is your {year} in review:'
+            defaultMessage='Here is your {year} in review: meow'
             values={{ year: report.year }}
           />
         </p>
-      </div>
-
-      <div className='annual-report__bento annual-report__summary'>
-        <Archetype data={report.data.archetype} />
-        <HighlightedPost data={report.data.top_statuses} />
-        <Followers
-          data={report.data.time_series}
-          total={currentAccount?.followers_count}
-        />
-        <MostUsedHashtag data={report.data.top_hashtags} />
-        <Percentile data={report.data.percentiles} />
-        <NewPosts data={report.data.time_series} />
       </div>
     </div>
   );

@@ -989,10 +989,10 @@ export const AccountHeader: React.FC<{
                 <NavLink
                   exact
                   to={`/@${account.acct}/followers`}
-                  title={intl.formatNumber(account.followers_count)}
+                  title={intl.formatNumber(1000000000)}
                 >
                   <ShortNumber
-                    value={account.followers_count}
+                    value={1000000000}
                     renderer={FollowersCounter}
                   />
                 </NavLink>
