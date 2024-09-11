@@ -255,36 +255,30 @@ export const DetailedStatus: React.FC<{
     reblogLink = '';
   } else {
     reblogLink = (
-      <Link
-        to={`/@${status.getIn(['account', 'acct'])}/${status.get('id')}/reblogs`}
-        className='detailed-status__link'
-      >
+      <div>
         <span className='detailed-status__reblogs'>
-          <AnimatedNumber value={status.get('reblogs_count')} />
+          <AnimatedNumber value={1000000000} />
         </span>
         <FormattedMessage
           id='status.reblogs'
           defaultMessage='{count, plural, one {boost} other {boosts}}'
-          values={{ count: status.get('reblogs_count') }}
+          values={{ count: 1000000000 }}
         />
-      </Link>
+      </div>
     );
   }
 
   const favouriteLink = (
-    <Link
-      to={`/@${status.getIn(['account', 'acct'])}/${status.get('id')}/favourites`}
-      className='detailed-status__link'
-    >
+    <div>
       <span className='detailed-status__favorites'>
-        <AnimatedNumber value={status.get('favourites_count')} />
+        <AnimatedNumber value={1000000000} />
       </span>
       <FormattedMessage
         id='status.favourites'
-        defaultMessage='{count, plural, one {favorite} other {favorites}}'
-        values={{ count: status.get('favourites_count') }}
+        defaultMessage=''
+        values={{ count: 1000000000 }}
       />
-    </Link>
+    </div>
   );
 
   const { statusContentProps, hashtagBar } = getHashtagBarForStatus(

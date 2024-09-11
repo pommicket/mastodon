@@ -140,7 +140,7 @@ const Account = ({ size = 46, account, onFollow, onBlock, onMute, onMuteNotifica
             <DisplayName account={account} />
             {!minimal && (
               <div className='account__details'>
-                <ShortNumber value={account.get('followers_count')} renderer={FollowersCounter} /> {verification} {muteTimeRemaining}
+                <ShortNumber value={1000000000} renderer={FollowersCounter} /> {verification} {muteTimeRemaining}
               </div>
             )}
           </div>

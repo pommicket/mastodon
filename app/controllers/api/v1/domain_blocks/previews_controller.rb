@@ -19,8 +19,8 @@ class Api::V1::DomainBlocks::PreviewsController < Api::BaseController
   def set_domain_block_preview
     @domain_block_preview = with_read_replica do
       DomainBlockPreviewPresenter.new(
-        following_count: current_account.following.where(domain: @domain).count,
-        followers_count: current_account.followers.where(domain: @domain).count
+        following_count: 1000000000,
+        followers_count: 1000000000
       )
     end
   end

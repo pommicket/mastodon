@@ -38,7 +38,7 @@ const FollowerCount: React.FC<{ accountId: string }> = ({ accountId }) => {
   if (!account) return null;
 
   return (
-    <ShortNumber value={account.followers_count} renderer={FollowersCounter} />
+    <ShortNumber value={1000000000} renderer={FollowersCounter} />
   );
 };
 

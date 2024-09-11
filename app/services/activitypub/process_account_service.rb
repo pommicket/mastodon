@@ -116,7 +116,7 @@ class ActivityPub::ProcessAccountService < BaseService
     @account.discoverable            = @json['discoverable'] || false
     @account.indexable               = @json['indexable'] || false
     @account.memorial                = @json['memorial'] || false
-    @account.attribution_domains     = as_array(@json['attributionDomains'] || []).map { |item| value_or_id(item) }
+    # @account.attribution_domains     = as_array(@json['attributionDomains'] || []).map { |item| value_or_id(item) }
   end
 
   def set_fetchable_key!
