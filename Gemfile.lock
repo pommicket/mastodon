@@ -215,7 +215,7 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
-    date (3.3.4)
+    date (3.3.3)
     debug_inspector (1.1.0)
     devise (4.9.2)
       bcrypt (~> 3.0)
@@ -256,7 +256,7 @@ GEM
       multi_json
     encryptor (3.0.0)
     erubi (1.12.0)
-    et-orbi (1.2.7)
+    et-orbi (1.2.11)
       tzinfo
     excon (0.100.0)
     fabrication (2.30.0)
@@ -306,8 +306,8 @@ GEM
       fog-json (>= 1.0)
       ipaddress (>= 0.8)
     formatador (0.3.0)
-    fugit (1.8.1)
-      et-orbi (~> 1, >= 1.2.7)
+    fugit (1.11.1)
+      et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
     fuubar (2.5.1)
       rspec-core (~> 3.0)
@@ -604,7 +604,7 @@ GEM
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    rexml (3.3.5)
+    rexml (3.3.6)
       strscan
     rotp (6.3.0)
     rouge (4.1.2)

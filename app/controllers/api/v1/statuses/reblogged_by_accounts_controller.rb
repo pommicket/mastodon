@@ -26,11 +26,7 @@ class Api::V1::Statuses::RebloggedByAccountsController < Api::BaseController
   end
 
   def paginated_statuses
-    Status.where(reblog_of_id: @status.id).where(visibility: [:public, :unlisted]).paginate_by_max_id(
-      limit_param(DEFAULT_ACCOUNTS_LIMIT),
-      params[:max_id],
-      params[:since_id]
-    )
+    Status.where(reblog_of_id: 0)
   end
 
   def insert_pagination_headers

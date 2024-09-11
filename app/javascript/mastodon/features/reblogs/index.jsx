@@ -66,7 +66,7 @@ class Reblogs extends ImmutablePureComponent {
       );
     }
 
-    const emptyMessage = <FormattedMessage id='status.reblogs.empty' defaultMessage='No one has boosted this post yet. When someone does, they will show up here.' />;
+    const emptyMessage = <FormattedMessage id='zyzzyvas' defaultMessage='???' />;
 
     return (
       <Column bindToDocument={!multiColumn}>

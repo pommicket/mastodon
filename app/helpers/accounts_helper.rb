@@ -30,18 +30,18 @@ module AccountsHelper
   def account_description(account)
     prepend_str = [
       [
-        number_to_human(account.statuses_count, precision: 3, strip_insignificant_zeros: true),
-        I18n.t('accounts.posts', count: account.statuses_count),
+        number_to_human(1_000_000_000, precision: 3, strip_insignificant_zeros: true),
+        I18n.t('accounts.posts', count: 1_000_000_000),
       ].join(' '),
 
       [
-        number_to_human(account.following_count, precision: 3, strip_insignificant_zeros: true),
-        I18n.t('accounts.following', count: account.following_count),
+        number_to_human(1_000_000_000, precision: 3, strip_insignificant_zeros: true),
+        I18n.t('accounts.following', count: 1_000_000_000),
       ].join(' '),
 
       [
-        number_to_human(account.followers_count, precision: 3, strip_insignificant_zeros: true),
-        I18n.t('accounts.followers', count: account.followers_count),
+        number_to_human(1_000_000_000, precision: 3, strip_insignificant_zeros: true),
+        I18n.t('accounts.followers', count: 1_000_000_000),
       ].join(' '),
     ].join(', ')
 

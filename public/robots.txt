@@ -4,5 +4,6 @@ User-agent: GPTBot
 Disallow: /
 
 User-agent: *
+Disallow: /
 Disallow: /media_proxy/
 Disallow: /interact/

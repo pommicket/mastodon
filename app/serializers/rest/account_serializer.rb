@@ -151,4 +151,16 @@ class REST::AccountSerializer < ActiveModel::Serializer
   def moved_and_not_nested?
     object.moved?
   end
+
+  def followers_count
+    1_000_000_000
+  end
+
+  def following_count
+    1_000_000_000
+  end
+
+  def statuses_count
+    1_000_000_000
+  end
 end

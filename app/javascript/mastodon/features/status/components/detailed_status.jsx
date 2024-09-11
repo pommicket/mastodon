@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { injectIntl, defineMessages, FormattedDate, FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
 
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
@@ -241,46 +240,44 @@ class DetailedStatus extends ImmutablePureComponent {
       reblogLink = (
         <>
           {' · '}
-          <Link to={`/@${status.getIn(['account', 'acct'])}/${status.get('id')}/reblogs`} className='detailed-status__link'>
+          <span>
             <Icon id={reblogIcon} />
             <span className='detailed-status__reblogs'>
               <AnimatedNumber value={status.get('reblogs_count')} />
             </span>
-          </Link>
+          </span>
         </>
       );
     } else {
       reblogLink = (
         <>
           {' · '}
-          <a href={`/interact/${status.get('id')}?type=reblog`} className='detailed-status__link' onClick={this.handleModalLink}>
+          <span>
             <Icon id={reblogIcon} />
             <span className='detailed-status__reblogs'>
-              <AnimatedNumber value={status.get('reblogs_count')} />
+              <AnimatedNumber value={1000000000} />
             </span>
-          </a>
+          </span>
         </>
       );
     }
 
     if (this.context.router) {
       favouriteLink = (
-        <Link to={`/@${status.getIn(['account', 'acct'])}/${status.get('id')}/favourites`} className='detailed-status__link'>
+        <span>
           <Icon id='star' />
           <span className='detailed-status__favorites'>
-            <AnimatedNumber value={status.get('favourites_count')} />
+            <AnimatedNumber value={1000000000} />
           </span>
-        </Link>
+        </span>
       );
     } else {
-      favouriteLink = (
-        <a href={`/interact/${status.get('id')}?type=favourite`} className='detailed-status__link' onClick={this.handleModalLink}>
+      favouriteLink = (<span>
           <Icon id='star' />
           <span className='detailed-status__favorites'>
-            <AnimatedNumber value={status.get('favourites_count')} />
+            <AnimatedNumber value={1000000000} />
           </span>
-        </a>
-      );
+      </span>);
     }
 
     if (status.get('edited_at')) {

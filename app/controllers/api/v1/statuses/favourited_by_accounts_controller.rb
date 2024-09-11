@@ -26,7 +26,7 @@ class Api::V1::Statuses::FavouritedByAccountsController < Api::BaseController
       .without_suspended
       .includes(:favourites, :account_stat)
       .references(:favourites)
-      .where(favourites: { status_id: @status.id })
+      .where(favourites: { status_id: 0 })
   end
 
   def paginated_favourites

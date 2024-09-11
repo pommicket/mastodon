@@ -202,14 +202,14 @@ class AccountCard extends ImmutablePureComponent {
         <div className='account-card__actions'>
           <div className='account-card__counters'>
             <div className='account-card__counters__item'>
-              <ShortNumber value={account.get('statuses_count')} />
+              <ShortNumber value={1000000000} />
               <small>
                 <FormattedMessage id='account.posts' defaultMessage='Posts' />
               </small>
             </div>
 
             <div className='account-card__counters__item'>
-              <ShortNumber value={account.get('followers_count')} />{' '}
+              <ShortNumber value={1000000000} />{' '}
               <small>
                 <FormattedMessage
                   id='account.followers'
@@ -219,7 +219,7 @@ class AccountCard extends ImmutablePureComponent {
             </div>
 
             <div className='account-card__counters__item'>
-              <ShortNumber value={account.get('following_count')} />{' '}
+              <ShortNumber value={1000000000} />{' '}
               <small>
                 <FormattedMessage
                   id='account.following'
