@@ -92,7 +92,7 @@ export const DomainBlockModal: React.FC<{
         <div className='safety-action-modal__bullet-points'>
           {preview &&
             preview !== 'error' &&
-            preview.followers_count + preview.following_count > 0 && (
+            1 > 0 && (
               <div>
                 <div className='safety-action-modal__bullet-points__icon'>
                   <Icon id='' icon={PersonRemoveIcon} />
@@ -105,11 +105,11 @@ export const DomainBlockModal: React.FC<{
                       values={{
                         followersCount: preview.followers_count,
                         followersCountDisplay: (
-                          <ShortNumber value={preview.followers_count} />
+                          <ShortNumber value={1000000000} />
                         ),
                         followingCount: preview.following_count,
                         followingCountDisplay: (
-                          <ShortNumber value={preview.following_count} />
+                          <ShortNumber value={1000000000} />
                         ),
                       }}
                     />

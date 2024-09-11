@@ -4,6 +4,7 @@ User-agent: GPTBot
 Disallow: /
 
 User-agent: *
+Disallow: /
 Disallow: /media_proxy/
 Disallow: /interact/
 Disallow: /api/v1/instance/domain_blocks

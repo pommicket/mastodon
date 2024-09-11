@@ -130,7 +130,7 @@ const AccountItem: React.FC<{
 
             <div className='account__details'>
               <ShortNumber
-                value={account.followers_count}
+                value={1000000000}
                 renderer={FollowersCounter}
               />{' '}
               {firstVerifiedField && (

@@ -1,3 +1,4 @@
 default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
+pommicket-light: styles/pommicket-light.scss
